@@ -3,7 +3,14 @@
     <button
     :class="['w-button-'+type,{'w-button-disabled':disabled},{'w-button-circle':circle}]"
     :disabled="disabled"
-    @click="handleClick"></button>
+    @click="handleClick">
+    <slot>
+      <span>
+        <i :class="icon"></i>
+      </span>
+      <span>搜索</span>
+    </slot>
+    </button>
   </div>
 </template>
 
@@ -35,7 +42,7 @@ export default {
 
 <style scoped>
 button{
-  width: 100%;
+  /* width: 100%; */
   border: 1px solid #dcdfe6;
   background: none;
   padding: 12px 20px;
@@ -80,5 +87,11 @@ border-radius: 50px;
 /* 圆 */
 .w-button-circle{
   border-radius: 50%;
+}
+/* 文字按钮 */
+.w-button-text{
+  border: none;
+  color: rgb(95, 173, 255);
+  background-color: none;
 }
 </style>
