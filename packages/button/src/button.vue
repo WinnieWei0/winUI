@@ -10,6 +10,12 @@
       </span>
       <span>搜索</span>
     </slot>
+    <div class="btnLoading" v-if="loading">
+      <span>
+        <i></i>
+      </span>
+      <span>加载中</span>
+    </div>
     </button>
   </div>
 </template>
@@ -24,7 +30,8 @@ export default {
     },
     disabled: Boolean,
     circle: Boolean,
-    icon: String
+    icon: String,
+    loading: Boolean
   },
   data() {
     return {

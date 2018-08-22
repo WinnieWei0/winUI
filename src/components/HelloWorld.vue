@@ -27,6 +27,9 @@
     <div class="btnDetaul">
       <w-button type="primary" circle><i class="fa fa-camera-retro"></i></w-button>
     </div>
+    <div class="btnDetaul">
+      <w-button type="primary" loading="true">点击</w-button>
+    </div>
   </div>
 </template>
 
