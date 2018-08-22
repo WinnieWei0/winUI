@@ -4,7 +4,7 @@
     :class="['w-button-'+type,{'w-button-disabled':disabled},{'w-button-circle':circle}]"
     :disabled="disabled"
     @click="handleClick">
-    <slot>
+    <slot v-if="!loading">
       <span>
         <i :class="icon"></i>
       </span>
@@ -12,7 +12,7 @@
     </slot>
     <div class="btnLoading" v-if="loading">
       <span>
-        <i></i>
+        <i class="fa fa-spinner fa-spin"></i>
       </span>
       <span>加载中</span>
     </div>
@@ -35,13 +35,11 @@ export default {
   },
   data() {
     return {
-      count: 0
     }
   },
   methods: {
     handleClick() {
-      this.count++
-      alert(this.count)
+      this.$emit('click')
     }
   }
 }
