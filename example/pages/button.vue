@@ -38,15 +38,15 @@ export default {
   name: "HelloWorld",
   data() {
     return {
-      loading:false
+      loading: false
     };
   },
-  methods:{
-    handleLoading(){
-      this.loading=true
-setTimeout(()=>{
-  this.loading=false
-},1000)
+  methods: {
+    handleLoading() {
+      this.loading = true;
+      setTimeout(() => {
+        this.loading = false;
+      }, 1000);
     }
   }
 };

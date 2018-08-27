@@ -1,6 +1,6 @@
 <template>
   <div class="example">
-    <div class="btnDetaul">
+    <!-- <div class="btnDetaul">
       <w-button>button</w-button>
     </div>
     <div class="btnDetaul">
@@ -29,7 +29,7 @@
     </div>
     <div class="btnDetaul">
       <w-button type="primary" loading="true">点击</w-button>
-    </div>
+    </div> -->
   </div>
 </template>
 

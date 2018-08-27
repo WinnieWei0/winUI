@@ -39,6 +39,7 @@ export default {
   },
   methods: {
     handleClick() {
+      console.log(this.loading)
       this.$emit('click')
     }
   }
