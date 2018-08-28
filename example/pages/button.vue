@@ -13,13 +13,13 @@
       <w-button type="warning">button</w-button>
     </div>
     <div class="btnDetaul">
-      <w-button type="danger">button</w-button>
+      <w-button type="danger" @click="handleClick">button</w-button>
     </div>
     <div class="btnDetaul">
-      <w-button disabled>button</w-button>
+      <w-button disabled @click="handleClick">button</w-button>
     </div>
     <div class="btnDetaul">
-      <w-button type="detault" circle>button</w-button>
+      <w-button type="default" circle>button</w-button>
     </div>
     <div class="btnDetaul">
       <w-button type="text" circle>button</w-button>
@@ -42,6 +42,9 @@ export default {
     };
   },
   methods: {
+    handleClick(){
+      alert(this.loading)
+    },
     handleLoading() {
       this.loading = true;
       setTimeout(() => {
