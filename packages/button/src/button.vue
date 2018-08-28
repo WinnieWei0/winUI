@@ -28,7 +28,7 @@
 4、点击事件 -->
 <script>
 export default {
-  name: "wButton",
+  name: "w-button",
   props: {
     type: {
       type: String,
