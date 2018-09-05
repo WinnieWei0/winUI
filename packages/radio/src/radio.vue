@@ -1,13 +1,13 @@
 <template>
-	<div>
-		<radio></radio>
-	</div>
+<div>
+<input type="radio">
+</div>
 </template>
 
 <script>
 export default {
-	name:'w-radio'
-};
+  name: 'w-radio'
+}
 </script>
 
 <style scoped>
