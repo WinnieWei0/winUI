@@ -40,6 +40,7 @@ module.exports = {
     // 禁止出现未使用过的变量
     // 'no-unused-vars': 0,
     // 要求或禁止末尾逗号
-    'comma-dangle': 0
+    'comma-dangle': 0,
+    'no-tabs':'off'
   }
 }
