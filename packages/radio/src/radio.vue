@@ -1,19 +1,23 @@
 <template>
 	<div>
 		<div class="w-radio-item">
-			<input type="radio" class="w-radio" name="a">
-			<span class="w-radioInput"></span>男生
+			<input type="radio" class="w-radio" :name='name'>
+			<span class="w-radioInput"></span>
+			<slot></slot>
 		</div>
-		<div class="w-radio-item">
+		<!-- <div class="w-radio-item">
 			<input type="radio" class="w-radio" name="a">
 			<span class="w-radioInput"></span>女生
-		</div>
+		</div> -->
 	</div>
 </template>
 
 <script>
 export default {
-  name: 'w-radio'
+  name: 'w-radio',
+  props: {
+    name: String
+  }
 }
 </script>
 

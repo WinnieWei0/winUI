@@ -42,7 +42,7 @@ export default {
     };
   },
   methods: {
-    handleClick(){
+    handleClick() {
       alert(this.loading)
     },
     handleLoading() {
