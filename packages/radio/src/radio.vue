@@ -2,7 +2,7 @@
 	<div>
 		<div class="w-radio-item">
 			<input type="radio" class="w-radio" :disabled="disabled" v-model="value" :value="label" :name='name'>
-			<span class="w-radioInput"></span>
+			<span :class="['w-radioInput',{'w-radio-disabled':disabled}]"></span>
 			<slot></slot>
 		</div>
 	</div>
@@ -60,11 +60,11 @@ export default {
 	width: 15px;
 	height: 15px;
 	display: inline-block;
-	border: 2px solid #ccc;
 	border-radius: 50%;
 	vertical-align: middle;
 	margin: 5px;
 	position: relative;
+  border: 2px solid rgb(64, 158, 255);
 }
 .w-radioInput::after{
 	content: '';
@@ -82,9 +82,13 @@ export default {
 }
 /* 选中样式 */
 .w-radio:checked+.w-radioInput{
-	border: 2px solid rgb(64, 158, 255);
+	/* border: 2px solid rgb(64, 158, 255); */
 }
 .w-radio:checked+.w-radioInput::after{
 	background-color: rgb(64, 158, 255);
+}
+/* 不可选样式 */
+.w-radio-disabled{
+	border: 2px solid #ccc;
 }
 </style>
