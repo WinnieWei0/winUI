@@ -6,8 +6,11 @@ import router from './router'
 
 import Button from '../packages/button'
 import Radio from '../packages/radio'
+import RadioGroup from '../packages/radio-group'
+
 Vue.component(Button.name, Button)
 Vue.component(Radio.name, Radio)
+Vue.component(RadioGroup.name, RadioGroup)
 
 Vue.config.productionTip = false
 
