@@ -11,11 +11,6 @@
 <script>
 export default {
   name: 'w-radio',
-  data() {
-    return {
-      emitVal: ''
-    }
-  },
   model: {
     prop: 'modeVal',
     event: 'change'
