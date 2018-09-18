@@ -7,10 +7,12 @@ import router from './router'
 import Button from '../packages/button'
 import Radio from '../packages/radio'
 import RadioGroup from '../packages/radio-group'
+import Checkbox from '../packages/checkbox'
 
 Vue.component(Button.name, Button)
 Vue.component(Radio.name, Radio)
 Vue.component(RadioGroup.name, RadioGroup)
+Vue.component(Checkbox.name, Checkbox)
 
 Vue.config.productionTip = false
 
