@@ -27,6 +27,7 @@ export default {
   computed: {
     value: {
       get() {
+        console.log(this.modeVal)
         return this.modeVal
       },
       set(val) {
