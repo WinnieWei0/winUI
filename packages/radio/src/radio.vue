@@ -7,7 +7,16 @@
 		</div>
 	</div>
 </template>
+<!--
+radio单选框：
+	一、属性：
+		1、v-model绑定值；
+		2、label标识唯一选项；
+		3、disabled为true，该组件不可用。
 
+	二、事件：
+		1、change，选项改变时触发，带一个参数val为当前选中的值
+-->
 <script>
 export default {
   name: 'w-radio',

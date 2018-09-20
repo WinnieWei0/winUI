@@ -27,10 +27,11 @@ export default {
   computed: {
     value: {
       get() {
-        console.log(this.modeVal)
+        console.log(2222222, this.modeVal)
         return this.modeVal
       },
-      set(val) {
+      set(val, pro) {
+        console.log(3333333, val, pro)
         this.$emit('change', val)
       }
     }

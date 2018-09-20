@@ -19,13 +19,18 @@
     </button>
   </div>
 </template>
-<!-- button按钮
-样式：
-1、type：背景样式(primary、success、warning、danger)；
-2、disabled：按钮是否可用(传入为不可用，不传则可用)
-3、circle：圆形按钮(传入为圆形)
-事件：
-4、点击事件 -->
+<!--
+button按钮
+  一、样式：
+    1、type：背景样式(primary、success、warning、danger)；
+    2、circle：圆形按钮(传入为圆形)
+
+  二、属性：
+    1、disabled：按钮是否可用(传入为不可用，不传则可用)
+
+  三、事件：
+    1、点击事件
+ -->
 <script>
 export default {
   name: "w-button",
