@@ -7,7 +7,13 @@
     </div>
   </div>
 </template>
-
+<!--
+  chechbox多选框：
+    一、属性：
+      1、disabled：是否可用
+    二、事件：
+      1、change：一个参数：当前值
+-->
 <script>
 export default {
   name: 'w-checkbox',
@@ -20,18 +26,16 @@ export default {
       type: String,
       default: 'a'
     },
-    modeVal: String,
+    modeVal: Boolean,
     label: String,
     disabled: Boolean
   },
   computed: {
     value: {
       get() {
-        console.log(2222222, this.modeVal)
         return this.modeVal
       },
       set(val, pro) {
-        console.log(3333333, val, pro)
         this.$emit('change', val)
       }
     }
