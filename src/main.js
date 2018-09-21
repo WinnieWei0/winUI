@@ -8,11 +8,13 @@ import Button from '../packages/button'
 import Radio from '../packages/radio'
 import RadioGroup from '../packages/radio-group'
 import Checkbox from '../packages/checkbox'
+import Dialog from '../packages/dialog'
 
 Vue.component(Button.name, Button)
 Vue.component(Radio.name, Radio)
 Vue.component(RadioGroup.name, RadioGroup)
 Vue.component(Checkbox.name, Checkbox)
+Vue.component(Dialog.name, Dialog)
 
 Vue.config.productionTip = false
 

@@ -5,6 +5,7 @@ import Button from '../../example/pages/button.vue'
 import Radio from '../../example/pages/radio.vue'
 import RadioGroup from '../../example/pages/radio-group.vue'
 import Checkbox from '../../example/pages/checkbox.vue'
+import Dialog from '../../example/pages/dialog.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/checkbox',
       name: 'Checkbox',
       component: Checkbox
+    },
+    {
+      path: '/dialog',
+      name: 'Dialog',
+      component: Dialog
     }
   ]
 })
